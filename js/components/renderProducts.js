@@ -105,5 +105,6 @@ function searchProducts(products) {
 
 		getProductsList(filteredProducts);
 		addFavorites(filteredProducts);
+		addToCart(filteredProducts);
 	};
 }
