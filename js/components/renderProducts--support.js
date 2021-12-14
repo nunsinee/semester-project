@@ -98,10 +98,7 @@ function searchProducts(products) {
 		const searchValue = this.value.trim().toLowerCase();
 
 		const filteredProducts = products.filter(function (product) {
-			if (
-				product.title.toLowerCase().includes(searchValue) ||
-				product.description.toLowerCase().includes(searchValue)
-			) {
+			if (product.title.toLowerCase().startsWith(searchValue)) {
 				return true;
 			}
 		});
