@@ -1,0 +1,140 @@
+footer {
+	display: flex;
+	> div {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.footer__company {
+	grid-area: footer__company;
+}
+.footer__subscribe {
+	grid-area: footer__subscribe;
+}
+
+.footer__social {
+	grid-area: footer__social;
+}
+
+.footer__links {
+	grid-area: footer__links;
+}
+
+.footer_logo {
+	grid-area: footer__logo;
+}
+
+.footer_address {
+	grid-area: footer__address;
+}
+
+.footer {
+	display: flex;
+	flex-shrink: 0;
+	flex-flow: column wrap;
+	color: $dark-text;
+	padding: 1rem;
+	font-size: 0.8rem;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	background-color: $primary;
+	margin-top: 2rem;
+	font-family: $font-secondary;
+
+	&__company {
+		display: grid;
+		grid-template-areas:
+			"footer__logo "
+			"footer__address";
+	}
+
+	&__address {
+		margin-top: 2rem;
+	}
+
+	&__links {
+		display: grid;
+		grid-template-rows: repeat(4, 1fr);
+		margin-top: 1rem;
+		color: $dark-text;
+	}
+
+	&__link {
+		color: $dark-text;
+		text-decoration: none;
+
+		&:hover {
+			color: $dark-text;
+		}
+	}
+
+	&__social {
+		font-size: 24px;
+		margin-top: 1rem;
+	}
+
+	&__subscribe {
+		color: $dark;
+		margin-top: 1rem;
+	}
+}
+
+.footer__logo {
+	width: 100px;
+	height: 50px;
+	padding: 0;
+}
+
+.footer__address {
+	margin-top: 1rem;
+}
+
+input[type="email"] {
+	max-width: 100%;
+	width: 200px;
+	height: 2em;
+	border: 1px solid $white;
+}
+
+i.fab {
+	color: $black;
+	font-size: 24px;
+}
+
+.footer__form {
+	position: relative;
+}
+
+.footer__form > i {
+	position: absolute;
+	bottom: 5px;
+	right: 80px;
+}
+
+@media (max-width: $tablet-width) {
+	.grid-footer {
+		display: grid;
+		grid-template-areas:
+			"footer__company footer__subscribe"
+			"footer__social footer__links";
+	}
+}
+
+@media (max-width: $mobile-width) {
+	.grid-footer {
+		display: grid;
+		grid-template-areas:
+			"footer__company "
+			"footer__subscribe"
+			"footer__social"
+			"footer__links";
+	}
+
+	.footer___company {
+		grid-template-areas:
+			"footer__logo "
+			"footer__address";
+	}
+}

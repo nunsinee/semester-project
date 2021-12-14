@@ -1,0 +1,155 @@
+.products-container {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	padding: 0.5em 0.75em;
+	margin: 1em 0;
+
+	@media (min-width: $mobile-width) {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1em;
+	}
+
+	@media (min-width: $mobile-width) {
+		grid-gap: 0.5em;
+		margin: 0.5em 0.25em;
+	}
+
+	@media (min-width: $medium-width) {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 0.25em;
+	}
+}
+
+.products__banner-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.products__banner-text {
+	background: transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: black;
+	width: 100%;
+
+	@media (min-width: $tablet-width) {
+		padding: 1.5rem;
+	}
+}
+
+.jumbo-featured {
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card {
+	padding: 1em 0.5em;
+	background-color: $white;
+	position: relative;
+	border-radius: $boderRadius;
+	line-height: 1.5rem;
+	margin-bottom: 0.5em;
+	box-shadow: $box-shadow-product;
+
+	&.card-body > * {
+		margin-bottom: 0.5em;
+
+		&.btn {
+			margin-top: 1em;
+		}
+	}
+
+	@media (min-width: $tablet-width) {
+		margin: 1rem;
+	}
+
+	@media (min-width: $medium-width) {
+		margin: 1em 0.5em;
+	}
+}
+
+//add to test
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+
+.hover01 figure:hover img {
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+	border-radius: $boderRadius;
+	box-shadow: $box-shadow-detail;
+}
+
+// add to test
+
+.img-product-border {
+	border: 1fpx solid white;
+	box-shadow: $box-shadow;
+}
+
+.product {
+	margin-bottom: 2em;
+}
+
+.img-thumbnail {
+	border: none;
+}
+
+.product__wrapp {
+	background-color: $pearl;
+}
+
+.product__content {
+	.btn {
+		margin: 1em 0;
+	}
+
+	@media (min-width: $tablet-width) {
+		margin: 2em 0;
+	}
+}
+
+.product-des {
+	padding: 0.5em 0.25em;
+}
+
+i {
+	font-size: 14px;
+	margin-right: 15px;
+	color: $black;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+		color: $green;
+	}
+}
+
+.card i {
+	position: absolute;
+	right: 0.5em;
+	top: 1em;
+	font-size: 1.5rem;
+}
+
+.card i.fal,
+.card i.fad {
+	color: $redheart;
+}
+
+.fav-container {
+	@media (min-width: $medium-width) {
+		padding: 2em 2em;
+		border-radius: 15px;
+	}
+}

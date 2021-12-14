@@ -1,0 +1,113 @@
+//Custom form
+
+.input-filter {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.input-group-text {
+	background-color: $secondary;
+	color: $white;
+}
+
+.admin-line {
+	border: 1px solid rgba($dark-text, 0.1);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 4em auto;
+	justify-content: center;
+	justify-self: center;
+	justify-items: center;
+	padding: 2em;
+	border-radius: 4px;
+	line-height: 2;
+	font-size: 1rem;
+	background: $white;
+	max-width: 400px;
+	border: 1px solid $white;
+	box-shadow: var(--box-shadow);
+}
+
+label {
+	display: block;
+	color: $green;
+}
+
+form > div {
+	padding: 0.5rem 0;
+}
+
+.input-filter {
+	max-width: 90%;
+	width: 300px;
+
+	@media (min-width: $tablet-width) {
+		width: 600px;
+	}
+}
+
+.input-group-text {
+	width: 30%;
+	display: block;
+}
+
+.login-navbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	@media (max-width: $tablet-width) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.logout {
+	color: blue;
+	background: transparent;
+	border: none;
+	width: auto;
+}
+
+.edit-form {
+	display: none;
+}
+
+.loading {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin-left: 45%;
+}
+
+.loading:after {
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 6px solid #333;
+	border-color: #333 transparent #333 transparent;
+	animation: loading 1.2s linear infinite;
+}
+
+.hidden {
+	display: none;
+}
+
+.image-uploadBtn {
+	margin-bottom: 1em;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

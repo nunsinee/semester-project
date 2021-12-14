@@ -1,0 +1,79 @@
+.detail-container {
+	display: flex;
+	background-color: lighten($pearl, 80%);
+	border-radius: $boderRadius;
+	padding: 0.5em 0.25em;
+	margin: 2em 0 3em 0;
+
+	@media (max-width: $mobile-width) {
+		flex-direction: column;
+		padding: 1em 2em;
+	}
+
+	@media (min-width: $mobile-width) {
+		flex-direction: column;
+		padding: 1em 2em;
+	}
+
+	@media (min-width: $tablet-width) {
+		flex-direction: row;
+		padding: 1em 2em;
+		margin: 2em 0 4em 0;
+	}
+}
+
+.product__detail-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.product__image {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 0 0 0;
+
+	@media (min-width: $tablet-width) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 0;
+	}
+
+	@media (min-width: $mobile-width) {
+		margin-bottom: 1.5rem;
+	}
+	@media (max-width: $medium-width) {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.desList {
+	position: relative;
+}
+
+.iconFav i {
+	color: $redheart;
+	font-size: 1.5rem;
+
+	@media (min-width: $tablet-width) {
+		right: 3em;
+		top: 2em;
+	}
+	@media (min-width: $medium-width) {
+		right: 0.5em;
+		top: 0.5em;
+		font-size: 1.7rem;
+	}
+}
+
+.product__image .iconFav {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+
+	@media (min-width: $tablet-width) {
+		right: 3em;
+		top: 2em;
+	}
+}

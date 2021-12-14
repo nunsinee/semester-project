@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap");
+
+// Color
+$primary: #a3bcb6;
+$secondary: #3c403d;
+
+$light: rgba($primary, 0.001%);
+
+// Navbar
+$navbar-light-color: #000000;
+$navbar-dark-color: $primary !default;
+$navbar-light-active-color: $secondary;
+$navbar-dark-active-color: black;
+$navbar-dark-color: $primary;
+
+//Typography
+$font-primary: "Lora", serif;
+$font-secondary: "Roboto", sans-serif;

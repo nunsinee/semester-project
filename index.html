@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			A little Greenery | We sell indoor plants and decoration trees for
+			home decoration
+		</title>
+
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU"
+			crossorigin="anonymous"
+		/>
+
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-login">
+				<div class="container">
+					<ul
+						class="navbar-nav ml-auto login-navbar"
+						id="adminMenu"
+					></ul>
+				</div>
+			</nav>
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container">
+					<span class="navbar-brand">
+						<a href="index.html"
+							><img src="/images/logo/logo.svg" alt="" srcset=""
+						/></a>
+					</span>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link home-menu" href="index.html"
+									>Home
+									<span class="sr-only">(current)</span></a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="products.html"
+									>Products</a
+								>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="favorites.html"
+									>Favorites</a
+								>
+							</li>
+						</ul>
+						<!-- CART Menu-->
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item cart-menu">
+								<a class="nav-link" href="cart.html"
+									><i class="fad fa-shopping-cart"></i>
+									<span
+										class="
+											totalItems-inCart
+											badge badge-warning
+										"
+										id="cartCount"
+										>0</span
+									></a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<div class="container">
+				<div class="banner-container"><div class="loading"></div></div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<h2>Featured Products</h2>
+				</div>
+				<div class="row">
+					<div class="products-container"></div>
+				</div>
+				<div class="row">
+					<div class="btnCenter">
+						<a
+							href="products.html"
+							class="btn btn-primary see-all btn-lg"
+						>
+							SEE ALL PLANTS POTS</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container grid-footer">
+				<div class="footer__company">
+					<div class="footer__logo">
+						<img
+							src="/images/logo/logo_footer.svg"
+							alt="a little greenery"
+						/>
+					</div>
+					<div class="footer__address">
+						<div>Huageveien 9B Bergen</div>
+						<div>5005, Norway</div>
+					</div>
+				</div>
+
+				<div class="footer__subscribe">
+					<h6 class="footer-text">
+						Stay in touch with us for the freshest products!
+					</h6>
+					<div class="footer__form">
+						<div class="input-group mb-3 ml-auto">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="your-email"
+							/>
+							<span class="input-group-text">subscribe</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__social">
+					<h6 class="footer-text">Follow us</h6>
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-twitter-square"></i>
+					<i class="fab fa-instagram-square"></i>
+				</div>
+
+				<div class="footer__links">
+					<a href="/" class="footer__link">Terms &amp; Conditions</a>
+					<a href="/" class="footer__link">Privacy Policy</a>
+					<a href="/" class="footer__link">Copyright 2020</a>
+				</div>
+			</div>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="js/index.js" type="module"></script>
+	</body>
+</html>

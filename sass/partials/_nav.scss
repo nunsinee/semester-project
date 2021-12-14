@@ -1,0 +1,107 @@
+.navbar {
+	color: $black;
+	text-transform: uppercase;
+
+	& i.fad {
+		font-size: 1.2rem;
+	}
+
+	& i.far {
+		font-size: 1.2rem;
+		color: $black;
+	}
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: $black;
+	font-size: 1rem;
+	margin-right: 0.5em;
+
+	&:hover {
+		color: lighten($green, 20%);
+		font-weight: 400;
+	}
+
+	&.home-menu {
+		text-decoration: overline;
+		color: $green;
+		font-weight: 600;
+	}
+
+	@media (min-width: $tablet-width) {
+		font-size: 1.2rem;
+		margin-right: 0.5em;
+	}
+}
+
+.nav-login {
+	font-size: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: darken($dark, 10%);
+	font-size: 0.9rem;
+	font-weight: 400;
+
+	&:hover {
+		color: darken($update, 70%);
+		font-size: bold;
+	}
+
+	@media (min-width: $tablet-width) {
+		font-size: 1.1rem;
+		margin-right: 0.5em;
+	}
+}
+
+.navbar-collapse {
+	z-index: 1;
+}
+
+.cart-icon .fad {
+	color: $secondary;
+}
+
+.navbar-brand img {
+	display: block;
+	width: 200px;
+	height: 100px;
+}
+
+.totalItems-inCart {
+	display: inline-block;
+	color: $black;
+	background-color: $cart-color;
+	margin: 0.25em 0 0 0.25em;
+	padding: 0.15em 0.5em;
+	border-radius: 5px;
+}
+
+.bg-dark {
+	background-color: $primary !important;
+}
+
+.badge {
+	padding-left: 18px;
+	padding-right: 18px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 50px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+	background-color: $cart-color;
+}
+
+#cartCount {
+	font-size: 1rem;
+	font-weight: 200;
+	background: lighten($cart-color, 10%);
+	color: $black;
+	padding: 0 0.25em;
+	vertical-align: top;
+	position: relative;
+	top: -12px;
+	right: 28px;
+}

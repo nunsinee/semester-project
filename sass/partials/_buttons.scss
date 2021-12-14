@@ -1,0 +1,125 @@
+.btn-primary {
+	background-color: transparent;
+	border: 1px solid $black;
+	color: $black;
+	border-color: $black;
+	margin-top: 1em;
+	text-transform: uppercase;
+	font-size: 14px;
+
+	&:hover {
+		color: $white;
+		background-color: $dark-text;
+		border-color: $dark-text;
+	}
+
+	&:active {
+		background-color: $dark-text;
+	}
+
+	&.see-all {
+		font-weight: 400;
+		font-size: 1.2rem;
+	}
+
+	&.btn-home-banner {
+		font-size: 1.1rem;
+		font-weight: 200;
+		margin-bottom: 2em;
+
+		@media (max-width: $mobile-width) {
+			font-size: 0.9rem;
+			margin-top: 2em;
+			background-color: rgba($black, 0.7);
+			color: $white;
+		}
+	}
+
+	&.btn-clear-all {
+		font-size: 1rem;
+		font-weight: 200;
+		margin-bottom: 2em;
+		background-color: rgba($cart-color, 0.6);
+		border: none;
+		color: $black;
+		width: 100%;
+		justify-content: center;
+
+		&:hover {
+			background: darken($cart-color, 0.9);
+		}
+
+		@media (min-width: $mobile-width) {
+			max-width: 20%;
+			margin-bottom: 2em;
+		}
+		@media (min-width: $medium-width) {
+			max-width: 15%;
+			margin-bottom: 2em;
+		}
+	}
+
+	&.btn-cart {
+		font-size: 1rem;
+		font-weight: 200;
+		background-color: lighten($black, 30%);
+		color: $white;
+		border: $white 1px solid;
+		padding: 0.5em 0.25em;
+		margin: 1.5em 0;
+		width: 100%;
+
+		&:hover {
+			background-color: $black;
+		}
+
+		@media (min-width: $tablet-width) {
+			max-width: 20%;
+		}
+	}
+}
+
+.btn-link {
+	color: $update;
+	text-align: left;
+
+	&:hover {
+		color: rgba($update, 0.4);
+	}
+}
+
+.btn-info {
+	border: none;
+	background-color: transparent;
+	color: $green-light;
+	text-align: left;
+	padding: 0;
+	font-size: 1rem;
+	font-weight: bold;
+	text-decoration: underline;
+
+	&:hover {
+		background-color: transparent;
+		color: $green;
+	}
+}
+
+.btn-admin {
+	width: 100%;
+}
+
+.btn-plus,
+.btn-minus {
+	width: 1.5em;
+	height: 1.5em;
+	border: 1px solid $secondary;
+	padding: 0.1em 0.25em;
+	text-align: center;
+	background-color: $black;
+	color: $white;
+	font-size: 1.5rem;
+
+	&:hover {
+		color: $white;
+	}
+}
