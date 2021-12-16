@@ -2,7 +2,6 @@ import { getExitingFavs } from "./utils/favFunctions.js";
 import messages from "./settings/messages.js";
 import clearFavButton from "./components/common/clearFavButton.js";
 import createMenu from "./components/common/createMenu.js";
-import addToCart from "./utils/addToCart.js";
 import { numberOfItemsInCart } from "./products/numberOfItemsInCart.js";
 import updateLinkBtn from "./components/common/updateLinkBtn.js";
 
@@ -56,7 +55,6 @@ function createFavPage() {
 					data-image="${product.image_url}"></i>
 			</div>`;
 
-		addToCart();
 		updateLinkBtn();
 	});
 }
