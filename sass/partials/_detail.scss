@@ -52,10 +52,14 @@
 	position: relative;
 }
 
-.iconFav i {
+.fad,
+.fal {
+	font-size: 2rem;
 	color: $redheart;
-	font-size: 1.5rem;
+}
 
+.iconFav i .fal,
+.iconFav i .fad {
 	@media (min-width: $tablet-width) {
 		right: 3em;
 		top: 2em;

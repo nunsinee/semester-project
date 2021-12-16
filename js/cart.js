@@ -44,7 +44,7 @@ function createCartPage() {
 					<div class=" cart__units">					
 						<h5 class="cart-text">Quantities</h5>
 						<div class="cart__units--plus-minus">
-							<button class="minusButton btn btn-minus" data-id="${cart.id}" >-</button>
+							<button class="minusButton btn btn-minus" id="minus" data-id="${cart.id}" >-</button>
 							<span class="number-unit">${cart.numberOfUnits}</span>
 							<button class="plusButton btn btn-plus" data-id="${cart.id}" >+</button>	
 						</div>
@@ -53,6 +53,10 @@ function createCartPage() {
 					<div class="cart__price">
 						<h5 class="cart-text">Total Price</h5>
 						<div class="cart-price"><small>$</small>${cart.price}</div>
+					</div>
+
+					<div class="cart__remove">
+					<i class="far fa-trash-alt" data-id="${cart.id}"></i>
 					</div>
 		
 				</div>
@@ -65,26 +69,30 @@ createCartPage();
 containerCart.addEventListener("click", (e) => {
 	const plusButton = e.target.classList.contains("plusButton");
 	const minusButton = e.target.classList.contains("minusButton");
+	const removeButton = e.target.classList.contains("far");
 
-	if (plusButton || minusButton) {
+	if (plusButton || minusButton || removeButton) {
 		for (let i = 0; i < carts.length; i++) {
 			if (carts[i].id == e.target.dataset.id) {
 				if (plusButton) {
 					carts[i].numberOfUnits += 1;
 				} else if (minusButton) {
 					carts[i].numberOfUnits -= 1;
+				} else if (removeButton) {
+					carts[i].numberOfUnits = 0;
 				}
+
 				carts[i].price = carts[i].base_price * carts[i].numberOfUnits;
-			}
-			if (carts[i].numberOfUnits <= 0) {
-				carts.splice(i, 1);
+
+				if (carts[i].numberOfUnits <= 0) {
+					carts.splice(i, 1);
+				}
 			}
 		}
-
-		saveToStorage(carts);
-		updateTotalPrice(carts);
-		createCartPage(carts);
 	}
+	saveToStorage(carts);
+	updateTotalPrice(carts);
+	createCartPage(carts);
 });
 
 //////////////////////////////////////////////////////////////////////////////

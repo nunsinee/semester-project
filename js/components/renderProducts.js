@@ -3,9 +3,7 @@ import { baseUrl } from "../settings/api.js";
 import displayMessage from "./common/displayMessage.js";
 import addToCart from "../utils/addToCart.js";
 import addFavorites from "../utils/addFavorites.js";
-import { getExitingFavs } from "../utils/favFunctions.js"; // test
-
-///////////////////////////////////////////////////////
+import { getExitingFavs } from "../utils/favFunctions.js";
 
 const favorites = getExitingFavs();
 
@@ -54,10 +52,10 @@ function getProductsList(products) {
 				</div>
 
 				<div class="card-body">
-					<a href="detail.html?id=${product.id}"><h5 class="card-title">${product.title}</h5>
+					<a href="detail.html?id=${product.id}">
+					<h5 class="card-title">${product.title}</h5>
 					<p class="card-text text-muted des-text-product">${product.description}See more</p>
 					<h5 class="card-subtitle mb-2 "> $ ${product.price}</h5>
-
 					</a>
 
 					<button
@@ -68,19 +66,16 @@ function getProductsList(products) {
 						data-price="${product.price}"
 						data-image="${product.image_url}"
 					
-					>
-						Add to cart
-					</button>				
+					>Add to cart</button>				
 
 					<a class="btn btn-link" id="updateBtn" href="edit.html?id=${product.id}">Edit/Update</a>
 				
 				</div>
-				<i class="${cssClass} fa-heart " 
-					data-id= "${product.id}" 
+				<i class="${cssClass} fa-heart" data-id= "${product.id}" 
 					data-title="${product.title}"
 					data-description="${product.description}"
 					data-price="${product.price}"
-					data-image="${product.image_url}">
+					data-image="${product.image_url}" >
 				</i>
 			</div>`;
 

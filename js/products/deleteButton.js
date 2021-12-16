@@ -35,8 +35,6 @@ export default function deleteButton(id) {
 					return JSON.parse(fav.id) !== id;
 				});
 
-				console.log(filteredFav);
-
 				saveFavs(filteredFav);
 
 				location.href = "/";
