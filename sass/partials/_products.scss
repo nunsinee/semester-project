@@ -68,6 +68,18 @@
 	}
 }
 
+.card-img-top {
+	width: 100%;
+	height: 25vh;
+	object-fit: cover;
+}
+
+.card-body {
+	width: 100%;
+	height: 30vh;
+	object-fit: cover;
+}
+
 .hover01 figure {
 	& img {
 		-webkit-transform: scale(1);

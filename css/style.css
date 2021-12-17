@@ -10341,6 +10341,20 @@ p.product__des {
   }
 }
 
+.card-img-top {
+  width: 100%;
+  height: 25vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-body {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .hover01 figure img {
   -webkit-transform: scale(1);
   transform: scale(1);
