@@ -3,15 +3,29 @@
 // Color
 $primary: #a3bcb6;
 $secondary: #3c403d;
+$green-nav: #0b7e17;
 
 $light: rgba($primary, 0.001%);
 
+//Custom colour variables
+$pearl: #daded4;
+$dark-text: #3c403d;
+$green: #39603d;
+$green-light: #5c9c63;
+$update: #132fcf;
+$cart-color: #fabd14;
+$redheart: #e6071a;
+$white: #ffffff;
+$black: #000000;
+
 // Navbar
-$navbar-light-color: #000000;
-$navbar-dark-color: $primary !default;
-$navbar-light-active-color: $secondary;
-$navbar-dark-active-color: black;
-$navbar-dark-color: $primary;
+$navbar-light-color: $black;
+$navbar-light-active-color: $green-nav;
+$navbar-light-hover-color: $green-nav;
+
+$navbar-dark-color: $black !default;
+$navbar-dark-active-color: $update;
+$navbar-dark-hover-color: $green-nav;
 
 //Typography
 $font-primary: "Lora", serif;
