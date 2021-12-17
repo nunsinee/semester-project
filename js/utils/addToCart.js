@@ -37,5 +37,10 @@ export default function addToCart() {
 		}
 
 		numberOfItemsInCart();
+		alertAddProduct();
 	}
+}
+
+function alertAddProduct() {
+	alert("Thank you for addeding this product to your shopping cart");
 }
