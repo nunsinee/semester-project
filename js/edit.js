@@ -3,9 +3,11 @@ import displayMessage from "./components/common/displayMessage.js";
 import { getToken } from "./utils/storage.js";
 import { baseUrl } from "./settings/api.js";
 import deleteButton from "./products/deleteButton.js";
-import { getExitingFavs } from "./utils/favFunctions.js";
+import { getExitingFavs, saveFavs } from "./utils/favFunctions.js";
+import { numberOfItemsInCart } from "./products/numberOfItemsInCart.js";
 
 //This function to get image link from Cloudinary
+numberOfItemsInCart();
 
 var myWidget = cloudinary.createUploadWidget(
 	{
@@ -175,8 +177,4 @@ async function updateProducts(title, price, description, image, featured, id) {
 	} catch (error) {
 		console.log(error);
 	}
-}
-
-function saveFavs(favs) {
-	localStorage.setItem("favorites", JSON.stringify(favs));
 }

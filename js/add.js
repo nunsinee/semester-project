@@ -2,6 +2,7 @@ import createMenu from "./components/common/createMenu.js";
 import displayMessage from "./components/common/displayMessage.js";
 import { getToken } from "./utils/storage.js";
 import { baseUrl } from "./settings/api.js";
+import { numberOfItemsInCart } from "./products/numberOfItemsInCart.js";
 
 const token = getToken();
 if (!token) {
@@ -9,6 +10,7 @@ if (!token) {
 }
 
 createMenu();
+numberOfItemsInCart();
 
 const message = document.querySelector(".message-container");
 const form = document.querySelector("form");

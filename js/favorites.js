@@ -2,6 +2,7 @@ import { getExitingFavs } from "./utils/favFunctions.js";
 import messages from "./settings/messages.js";
 import clearFavButton from "./components/common/clearFavButton.js";
 import createMenu from "./components/common/createMenu.js";
+import addToCart from "./utils/addToCart.js";
 import { numberOfItemsInCart } from "./products/numberOfItemsInCart.js";
 import updateLinkBtn from "./components/common/updateLinkBtn.js";
 
@@ -47,15 +48,10 @@ function createFavPage() {
 					<a class="btn btn-link" id="updateBtn" href="edit.html?id=${product.id}">Edit/Update</a>		
 
 				</div>
-				<i class="fad fa-heart "
-					data-id= "${product.id}" 
-					data-title="${product.title}"
-					data-description="${product.description}"
-					data-price="${product.price}"
-					data-image="${product.image_url}"></i>
+				<i class="fad fa-heart "</i>
 			</div>`;
-
-		updateLinkBtn();
 	});
+	addToCart();
+	updateLinkBtn();
 }
 createFavPage();

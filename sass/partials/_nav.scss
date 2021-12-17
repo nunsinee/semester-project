@@ -13,7 +13,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: $black;
+	color: $dark-text;
 	font-size: 1rem;
 	margin-right: 0.5em;
 
@@ -29,7 +29,7 @@
 	}
 
 	@media (min-width: $tablet-width) {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 		margin-right: 0.5em;
 	}
 }
@@ -39,7 +39,7 @@
 }
 
 .navbar-dark .navbar-nav .nav-link {
-	color: $black;
+	color: $dark-text;
 	font-size: 0.9rem;
 	font-weight: 400;
 
@@ -73,6 +73,10 @@
 
 .bg-dark {
 	background-color: $primary !important;
+}
+
+.bg-light {
+	margin-bottom: 0.5em;
 }
 
 .badge {

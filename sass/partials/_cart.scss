@@ -35,7 +35,14 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		margin: 0 1em;
+		align-items: center;
+		padding: 1em;
+
+		& span {
+			font-size: 1.2rem;
+			font-weight: 700;
+			margin: 0.1em 0.25em 0.25em 0.25em;
+		}
 	}
 	&__remove {
 		display: flex;
@@ -66,7 +73,8 @@
 		&__units {
 			display: flex;
 			flex-direction: column;
-			justify-content: space-around;
+			justify-content: space-between;
+			padding: 1em 0.5em;
 		}
 		&__remove {
 			display: flex;
@@ -97,7 +105,7 @@
 	}
 
 	&__units--plus-minus {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 	}
 }
 

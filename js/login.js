@@ -2,8 +2,10 @@ import displayMessage from "./components/common/displayMessage.js";
 import { baseUrl } from "./settings/api.js";
 import { saveToken, saveUser } from "./utils/storage.js";
 import createMenu from "./components/common/createMenu.js";
+import { numberOfItemsInCart } from "./products/numberOfItemsInCart.js";
 
 createMenu();
+numberOfItemsInCart;
 
 const form = document.querySelector("form");
 const username = document.querySelector("#username");

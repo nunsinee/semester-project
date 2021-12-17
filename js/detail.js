@@ -1,5 +1,5 @@
-import { baseUrl } from "../js/settings/api.js";
-import displayMessage from "../js/components/common/displayMessage.js";
+import { baseUrl } from "./settings/api.js";
+import displayMessage from "./settings/messages.js";
 import createMenu from "./components/common/createMenu.js";
 import addToCart from "./utils/addToCart.js";
 import { numberOfItemsInCart } from "./products/numberOfItemsInCart.js";
@@ -23,8 +23,6 @@ if (!id) {
 
 const productUrl = baseUrl + "products/" + id;
 const container = document.querySelector(".detail-container");
-
-renderFeaturedProducts();
 
 async function getDetailPage() {
 	try {
@@ -120,3 +118,5 @@ function breadCrumb(detail) {
 	breadcrumbTitle.innerHTML = "";
 	breadcrumbTitle.innerHTML = `${detail.title}`;
 }
+
+renderFeaturedProducts();
