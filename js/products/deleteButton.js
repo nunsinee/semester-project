@@ -34,14 +34,13 @@ export default function deleteButton(id) {
 				const filteredFav = existFavs.filter(function (fav) {
 					return JSON.parse(fav.id) !== id;
 				});
-
 				saveFavs(filteredFav);
-
-				// location.href = "/index.html";
-				document.location.href = "/index.html";
+				//location.href = "/";
 			} catch (error) {
 				console.log(error);
 			}
+
+			location.href = "/";
 		}
 	};
 }
