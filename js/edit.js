@@ -6,7 +6,6 @@ import deleteButton from "./products/deleteButton.js";
 import { getExitingFavs, saveFavs } from "./utils/favFunctions.js";
 import { numberOfItemsInCart } from "./products/numberOfItemsInCart.js";
 
-//This function to get image link from Cloudinary
 numberOfItemsInCart();
 
 var myWidget = cloudinary.createUploadWidget(

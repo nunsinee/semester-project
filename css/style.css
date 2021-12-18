@@ -10050,6 +10050,11 @@ p.product__des {
   right: 28px;
 }
 
+@media (max-width: 576px) {
+  .navbar-brand img {
+    width: 150px;
+  }
+}
 .jumbotron {
   background-repeat: no-repeat;
   background-position: center;
@@ -10348,11 +10353,8 @@ p.product__des {
      object-fit: cover;
 }
 
-.card-body {
-  width: 100%;
-  height: 30vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+.card-title {
+  height: 4vh;
 }
 
 .hover01 figure img {

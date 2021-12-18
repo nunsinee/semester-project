@@ -28,13 +28,37 @@
 				</div>
 			</nav>
 
+			<!-- Main Nav -->
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="container">
-					<span class="navbar-brand">
-						<a href="index.html"
-							><img src="/images/logo/logo.svg" alt="" srcset=""
-						/></a>
-					</span>
+					<a class="navbar-brand" href="index.html">
+						<img
+							src="/images/logo/logo.svg"
+							alt=" a little greenery logo"
+							srcset=""
+					/></a>
+
+					<ul
+						class="
+							navbar-nav
+							d-sm-block d-md-block d-lg-none
+							ml-auto
+						"
+					>
+						<li class="nav-item cart-menu">
+							<a class="nav-link" href="cart.html"
+								><i class="far fa-shopping-cart"></i>
+								<span
+									class="
+										totalItems-inCart
+										badge badge-warning
+									"
+									id="cartCount"
+									>0</span
+								></a
+							>
+						</li>
+					</ul>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -63,7 +87,6 @@
 									>Products</a
 								>
 							</li>
-
 							<li class="nav-item">
 								<a class="nav-link" href="favorites.html"
 									>Favorites</a
@@ -71,14 +94,19 @@
 							</li>
 						</ul>
 
-						<!-- CART Menu-->
-						<ul class="navbar-nav ml-auto">
+						<ul
+							class="
+								navbar-nav
+								d-none d-sm-none d-lg-block
+								ml-auto
+							"
+						>
 							<li class="nav-item cart-menu">
 								<a class="nav-link" href="cart.html"
 									><i class="far fa-shopping-cart"></i>
 									<span
 										class="
-											totalItems-inCart
+											totalItems-inCartTwo
 											badge badge-warning
 										"
 										id="cartCount"
@@ -90,6 +118,8 @@
 					</div>
 				</div>
 			</nav>
+
+			<!-- Main nav -->
 
 			<div class="container">
 				<div class="banner-container"><div class="loading"></div></div>

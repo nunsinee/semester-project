@@ -17,30 +17,33 @@ export default function addToCart() {
 
 		const currentCarts = getExitingCarts();
 
-		const productExists = currentCarts.find(function (cart) {
-			return cart.id === id;
-		});
+		//check if peoduct is in the cart already
 
-		if (productExists === undefined) {
-			const product = {
-				id: id,
-				title: title,
-				price: +price,
-				description: description,
-				image_url: image,
-				numberOfUnits: 1,
-				base_price: +price,
-			};
+		if (currentCarts.some((item) => item.id === id)) {
+			alert("This product is already in your cart");
+		} else {
+			const productExists = currentCarts.find(function (cart) {
+				return cart.id === id;
+			});
 
-			currentCarts.push(product);
-			saveToStorage(currentCarts);
+			if (productExists === undefined) {
+				const product = {
+					id: id,
+					title: title,
+					price: +price,
+					description: description,
+					image_url: image,
+					numberOfUnits: 1,
+					base_price: +price,
+				};
+
+				currentCarts.push(product);
+				saveToStorage(currentCarts);
+			}
+
+			alert("Thank you for addeding this product to your shopping cart");
 		}
 
 		numberOfItemsInCart();
-		alertAddProduct();
 	}
-}
-
-function alertAddProduct() {
-	alert("Thank you for addeding this product to your shopping cart");
 }

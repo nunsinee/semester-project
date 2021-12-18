@@ -32,6 +32,8 @@ export function renderProducts() {
 	getProducts();
 }
 
+//////////////////////////////////////////////////////////////////////////////
+
 function getProductsList(products) {
 	container.innerHTML = "";
 
@@ -84,6 +86,7 @@ function getProductsList(products) {
 	});
 }
 
+//////////////////////////////////////////////////////////////////////////////
 //Search products
 
 function searchProducts(products) {

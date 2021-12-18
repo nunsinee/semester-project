@@ -2,6 +2,7 @@ import { getExitingCarts } from "../utils/cartFunction.js";
 
 export function numberOfItemsInCart() {
 	const totalItemsInCart = document.querySelector(".totalItems-inCart");
+	const totalItemsInCartTwo = document.querySelector(".totalItems-inCartTwo");
 
 	const itemsInCart = getExitingCarts();
 
@@ -12,5 +13,6 @@ export function numberOfItemsInCart() {
 	});
 
 	totalItemsInCart.innerHTML = totalItems;
+	totalItemsInCartTwo.innerHTML = totalItems;
 }
 numberOfItemsInCart();

@@ -66,6 +66,8 @@ function createCartPage() {
 
 createCartPage();
 
+//////////////////////////////////////////////////////////////////////////////
+
 containerCart.addEventListener("click", (e) => {
 	const plusButton = e.target.classList.contains("plusButton");
 	const minusButton = e.target.classList.contains("minusButton");
@@ -90,6 +92,7 @@ containerCart.addEventListener("click", (e) => {
 			}
 		}
 	}
+
 	saveToStorage(carts);
 	updateTotalPrice(carts);
 	createCartPage(carts);
