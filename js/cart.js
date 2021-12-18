@@ -66,8 +66,6 @@ function createCartPage() {
 
 createCartPage();
 
-//////////////////////////////////////////////////////////////////////////////
-
 containerCart.addEventListener("click", (e) => {
 	const plusButton = e.target.classList.contains("plusButton");
 	const minusButton = e.target.classList.contains("minusButton");
@@ -88,6 +86,7 @@ containerCart.addEventListener("click", (e) => {
 
 				if (carts[i].numberOfUnits <= 0) {
 					carts.splice(i, 1);
+					alert("This product will remove from your cart");
 				}
 			}
 		}
@@ -97,8 +96,6 @@ containerCart.addEventListener("click", (e) => {
 	updateTotalPrice(carts);
 	createCartPage(carts);
 });
-
-//////////////////////////////////////////////////////////////////////////////
 
 function updateTotalPrice() {
 	const subtotalContainer = document.querySelector(".subtotal-container");
@@ -113,9 +110,11 @@ function updateTotalPrice() {
 		totalPrice += cart.base_price * cart.numberOfUnits;
 		totalItems += cart.numberOfUnits;
 	});
+
 	subtotalContainer.innerHTML = `Subtotal (${totalItems} items): $${totalPrice.toFixed(
 		2
 	)}`;
+
 	totalItemsInCart.innerHTML = totalItems;
 }
 
