@@ -35,12 +35,10 @@ export default function deleteButton(id) {
 					return JSON.parse(fav.id) !== id;
 				});
 				saveFavs(filteredFav);
-				//location.href = "/";
+				location.href = "/";
 			} catch (error) {
 				console.log(error);
 			}
-
-			location.href = "/";
 		}
 	};
 }
