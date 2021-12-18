@@ -37,7 +37,8 @@ export default function deleteButton(id) {
 
 				saveFavs(filteredFav);
 
-				location.href = "/";
+				// location.href = "/index.html";
+				document.location.href = "/index.html";
 			} catch (error) {
 				console.log(error);
 			}
