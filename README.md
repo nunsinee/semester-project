@@ -18,7 +18,7 @@ There are 2 sections of website.
 -   A list of featured products
 -   A search text box. When filtering by title or product description, if it matching , it show result
     product and link to product details page.
--   an add to cart button
+-   an add to cart button,This will toggle the product in and out of a cart array stored in local storage.
 
 ### Admin section:
 
