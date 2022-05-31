@@ -53,4 +53,4 @@ no packages published
 
 ### Release
 
-![https://nunsinee-sp2.netlify.app/](nunsinee/semester-project)
+[https://nunsinee-sp2.netlify.app/](nunsinee/semester-project)
