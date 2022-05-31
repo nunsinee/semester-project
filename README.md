@@ -3,7 +3,7 @@
 Semester Project 2 is an e-commerce website made with Bootstrap, Javascript and SASS.
 To present an online shopping shop name "A little Greenery",which sells indoor plants and delivery directly to customer.
 
-![greenery screenshort](https://nunsinee-sp2.netlify.app/nunsinee/semester-project/main/images/screenshort_semester_project_2.png)
+![greenery screenshort](<img src="/images/logo/screenshort_semester_project_2.png" alt="alt text" width="200"/>)
 
 ## Description
 
