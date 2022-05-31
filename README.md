@@ -46,6 +46,11 @@ Clone the repo:
 git clone https://github.com/nunsinee/semester-project.gits
 ```
 
+### Setup
+
+-   [install live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+-   run with live server: right click any of the html file in vscode and open with live server
+
 ### Package Dependencies
 
 no packages published
