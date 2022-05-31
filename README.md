@@ -25,9 +25,8 @@ There are 2 sections of website.
 -   An admin login form
     User credentials
 
-*   email: admin@admin.com
-*   username: admin
-*   password: Pass1234
+    -   username: admin
+    -   password: Pass1234
 
 -   A contact form
 -   Adding/editing product
