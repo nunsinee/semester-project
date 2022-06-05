@@ -18,7 +18,8 @@ There are 2 sections of website.
 -   A list of featured products
 -   A search text box. When filtering by title or product description, if it matching , it show result
     product and link to product details page.
--   an add to cart button,This will toggle the product in and out of a cart array stored in local storage.
+-   An add to cart button,This will toggle the product in and out of a cart array stored in local storage.
+-   Display Cart and Product detail and price
 
 ### Admin section:
 
@@ -36,7 +37,7 @@ There are 2 sections of website.
 
 -   [Bootstrap](https://getbootstrap.com)
 -   JavaScript
--   Sass
+-   [Sass] (https://getbootstrap.com/docs/5.2/customize/sass/)
 
 ### Installing
 
@@ -48,8 +49,8 @@ git clone https://github.com/nunsinee/semester-project.gits
 
 ### Setup
 
--   [install live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
--   run with live server: right click any of the html file in vscode and open with live server
+-   [install Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+-   run with Live Server: right click any of the html file in vscode and open with live server
 
 ### Package Dependencies
 
