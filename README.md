@@ -19,7 +19,7 @@ There are 2 sections of website.
 -   A search text box. When filtering by title or product description, if it matching , it show result
     product and link to product details page.
 -   An add to cart button,This will toggle the product in and out of a cart array stored in local storage.
--   Display Cart and Product detail and price
+-   Display product detail and price in shopping cart.
 
 ### Admin section:
 
