@@ -56,6 +56,6 @@ git clone https://github.com/nunsinee/semester-project.gits
 
 no packages published
 
-### Release
+### Live Website
 
 [https://nunsinee-sp2.netlify.app/](nunsinee/semester-project)
